@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='indie.xml' b:templateVersion='1.3.3' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <meta charset='UTF-8'/>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <title>Clean SPA Template</title>
+    
+  <b:skin version='1.3.3'><![CDATA[ ////////Template by opensln ////////
+  ]]></b:skin>
+  
+    <style>
+      body {
+font-family: sans-serif;
+      }
+      
+      /*hide blogger Form Title*/
+      #ContactForm1 h3 {
+      display:none;
+      }
+
+      #spaTabsContainer {
+        max-width: 600px;
+        margin: 20px auto 0 auto;
+        position: relative;
+      }
+
+      .landingZone {
+        background-color: blueviolet;
+        color: white;
+        text-align: center;
+        height: 80hv;
+        display: flex;
+        justify-content: center;
+      }
+
+      .pageBrand {
+        margin: 20px 0 20px 20px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      nav h3 {
+        margin: 0;
+        align-self: center;
+      }
+
+      .boxClass {
+        min-height: 350px;
+        width: 100%;
+        margin: 20px auto 20px auto;
+        text-align: center;
+        transition: all;
+        opacity: 0;
+        transition-duration: 1s;
+      }
+
+      .boxClass.infocus {
+        opacity: 1;
+      }
+
+      .categoryTitle {
+        width: 60%;
+        margin: 20px auto 10px auto;
+      }
+
+      .categoryText {
+      width:80%;
+      margin: 0 auto 25px auto;
+      line-height: 20px;
+      text-align: justify;
+      }
+      
+      .formText {
+      width:80%;
+      margin:20px auto 0 auto;
+      }
+      
+      .formText input,
+      .formText textarea {
+      margin: 10px 0 10px 0;
+      }
+      
+      a {
+      text-decoration: none;
+      }
+
+      .linkBar {
+        margin: 10px auto 0 auto;
+        width: 60%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        color: black;
+        border: 1px solid white;
+        border-bottom: 1px solid grey;
+      }
+
+      .linkBar:hover {
+        background-color: lightgrey;
+        color: white;
+        border: 1px solid lightgrey;
+      }
+
+      .appLink {
+        align-self: center;
+      }
+ 
+
+      .nameBtn, .footerBtn {
+        float: left;
+        background-color: white;
+        cursor: pointer;
+        height:40px;
+        font-size: 16px;
+      }
+
+      .nameBtn{
+        border: solid 1px grey;
+        width:25%;
+      }
+      
+      @media screen and (max-width:400px) {
+      .nameBtn{
+        border: solid 1px grey;
+        width:50%;
+         margin-bottom:2px;
+      }
+      }
+
+      .footerBtn {
+       border: none;
+      }
+
+      footer {
+        border-top: 1px solid grey;
+        height: 40px;
+      }
+
+      .clearFloat::after {
+        content: &quot;&quot;;
+        clear: both;
+        display: table;
+      }
+      
+      #copyrightNotice {
+      text-align: center;
+      font-size:14px;
+      margin:20px 0 0 0;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <b:section id='mainHolder' maxwidgets='1' showaddelement='no'/>
+
+    <h3 class='pageBrand'>OpenSln - Portfolio Template</h3>
+<hr/>
+
+    <div id='spaTabsContainer'>
+      <div id='buttonDiv'>
+        <button class='nameBtn' name='welcome'>Welcome</button>
+        <button class='nameBtn' name='about'>About</button>
+        <button class='nameBtn' name='projects'>Projects</button>
+        <button class='nameBtn' name='contact'>Contact</button>
+      </div>
+
+      <div class='clearFloat'/>
+    
+      <div class='boxClass' id='' name='welcome'>
+      <p class='categoryTitle'>Welcome</p>
+      <p class='categoryText'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+      </div>
+
+      <div class='boxClass' id='' name='about'>
+      <p class='categoryTitle'>About</p>
+      <p class='categoryText'>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+      </div>
+
+      <div class='boxClass' id='mark' name='projects'>
+        <p class='categoryTitle'>Projects</p>
+
+
+        <a href='#'>
+        <p class='linkBar'>
+          <span class='appLink'>Project 1</span>
+        </p>
+        </a>
+        
+        <a href='#'>
+        <p class='linkBar'>
+          <span class='appLink'>Project 2</span>
+        </p>
+        </a>
+            
+        <a href='#'>
+        <p class='linkBar'>
+          <span class='appLink'>Project 3</span>
+        </p>
+        </a>
+        
+        <a href='#'>
+        <p class='linkBar'>
+          <span class='appLink'>Project 4</span>
+        </p>
+        </a>
+        
+        <a href='https://danielsmithldn.com/rwa/randomquiz/randomquiz01.html'>
+        <p class='linkBar'>
+          <span class='appLink'>Project 5</span>
+        </p>
+        </a>
+
+      </div>
+      
+      <div class='boxClass cleanContact' name='contact'>
+         <p class='categoryTitle'>Contact Form</p>
+        	<b:section id='contactSection'>
+<b:widget id='ContactForm1' locked='false' title='Contact Form' type='ContactForm' version='1'>
+  <b:includable id='main'>
+  								<b:include name='widget-title'/>
+  								<b:include name='content'/>
+				</b:includable>
+  <b:includable id='content'>
+    						<div class='form-group formText'>
+      							<form name='contact-form'>
+        								<p/>
+        								<data:contactFormNameMsg/>
+        								<br/>
+        								<input class='form-control' expr:id='data:widget.instanceId + &quot;_contact-form-name&quot;' name='name' size='30' type='text' value=''/>
+        								<p/>
+        								<data:contactFormEmailMsg/> <span style='font-weight: bolder;'>*</span>
+        								<br/>
+        								<input class='form-control' expr:id='data:widget.instanceId + &quot;_contact-form-email&quot;' name='email' size='30' type='text' value=''/>
+        								<p/>
+        								<data:contactFormMessageMsg/> <span style='font-weight: bolder;'>*</span>
+        								<br/>
+        								<textarea class='form-control' cols='25' expr:id='data:widget.instanceId + &quot;_contact-form-email-message&quot;' name='email-message' rows='5'/>
+        								<p/>
+        								<input class='btn btn-primary' expr:id='data:widget.instanceId + &quot;_contact-form-submit&quot;' expr:value='data:contactFormSendMsg' type='button'/>
+        								<p/>
+                      
+        							<div style='text-align: center; max-width: 222px; width: 100%'>
+          								<p class='contact-form-error-message' expr:id='data:widget.instanceId + &quot;_contact-form-error-message&quot;'/>
+          								<p class='contact-form-success-message' expr:id='data:widget.instanceId + &quot;_contact-form-success-message&quot;'/>
+        							</div>
+      							</form>
+                  
+    								
+  							</div>
+                  
+				</b:includable>
+</b:widget>
+</b:section>
+        </div> <!--end cleanContact-->
+
+      <footer>
+        <a href='#'>
+        <button class='footerBtn' name=''>link 1</button>  
+        </a>
+        <a href='#'>
+          <button class='footerBtn' name=''>link 2</button>
+        </a>
+        <a href='#'>
+          <button class='footerBtn' name=''>link 3</button>
+        </a>
+      </footer>
+      <p id='copyrightNotice'>Original by OpenSln 2021</p>
+
+    </div>
+
+    <script type='text/javascript'>
+//Set tabWidth
+      
+      let buttonCollection = document.querySelectorAll(&quot;.nameBtn&quot;);
+      let boxCollection = document.querySelectorAll(&quot;.boxClass&quot;);
+      let footerCollection = document.querySelectorAll(&quot;.footerBtn&quot;);
+
+      let tabWidth = 100 / buttonCollection.length;
+
+    let footerTabWidth = 100 / footerCollection.length;
+
+    footerCollection.forEach((item) =&gt; {
+      item.style.width = footerTabWidth + &quot;%&quot;;
+    });
+      
+// init welcome page
+      
+      document.onload = init();
+      
+      function init() {
+        selectedBox = &quot;welcome&quot;;
+        showChosen();
+      }
+
+      buttonCollection.forEach((item) =&gt; {
+        item.onclick = function (e) {
+        selectedBox = e.target.name;
+        showChosen();
+        };
+      });
+
+        function showChosen() {
+
+          boxCollection.forEach((item) =&gt; {
+
+                    if (item.getAttribute(&quot;name&quot;) !== selectedBox) {
+                      item.style.display = &quot;none&quot;;
+                      item.classList.remove(&quot;infocus&quot;);
+                    } else {
+                      item.style.display = &quot;block&quot;;
+                      setTimeout(() =&gt; {
+                        item.classList.add(&quot;infocus&quot;);
+                      }, 100);
+                    }
+                  });
+        }
+
+    </script>
+    <b:template-script async='true' name='indie' version='1.0.0'/>
+  </body>
+</html>

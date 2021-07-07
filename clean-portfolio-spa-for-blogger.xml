@@ -12,7 +12,11 @@
   
     <style>
       body {
-font-family: sans-serif;
+        font-family: sans-serif;
+      }
+
+       * {
+          box-sizing: border-box;
       }
       
       /*hide blogger Form Title*/
@@ -111,28 +115,47 @@ font-family: sans-serif;
       }
  
 
-      .nameBtn, .footerBtn {
+        .nameBtnHolder, .footerBtn {
         float: left;
         background-color: white;
-        cursor: pointer;
-        height:40px;
         font-size: 16px;
+        text-align:center;
+        cursor: pointer;
+        height:42px;
       }
 
-      .nameBtn{
+      .nameBtnHolder{
         border: solid 1px grey;
         width:25%;
       }
+
+      .nameBtn {
+        width:100%;
+        height:35px;
+        line-height: 38px;
+        background-color: white;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+      }
       
       @media screen and (max-width:400px) {
-      .nameBtn{
+      .nameBtnHolder{
         border: solid 1px grey;
         width:50%;
-         margin-bottom:2px;
+        margin-bottom:2px;
       }
       }
 
-      .footerBtn {
+       .highlight {
+          height:5px;
+      }
+
+      .nameBtn:hover + .highlight {
+        background-color:lightgrey;
+      }
+
+       .footerBtn {
        border: none;
       }
 
@@ -164,10 +187,25 @@ font-family: sans-serif;
 
     <div id='spaTabsContainer'>
       <div id='buttonDiv'>
-        <button class='nameBtn' name='welcome'>Welcome</button>
-        <button class='nameBtn' name='about'>About</button>
-        <button class='nameBtn' name='projects'>Projects</button>
-        <button class='nameBtn' name='contact'>Contact</button>
+              <div class='nameBtnHolder'>
+                <button class='nameBtn' name='welcome'>Welcome</button>
+                <div class='highlight'/>
+            </div>
+
+            <div class='nameBtnHolder'>
+                <button class='nameBtn' name='about'>About</button>
+                <div class='highlight'/>
+            </div>
+
+            <div class='nameBtnHolder'>
+                <button class='nameBtn' name='projects'>Projects</button>
+                <div class='highlight'/>
+            </div>
+
+            <div class='nameBtnHolder'>
+                <button class='nameBtn' name='contact'>Contact</button>
+                <div class='highlight'/>
+            </div>
       </div>
 
       <div class='clearFloat'/>

@@ -15,7 +15,7 @@
         font-family: sans-serif;
       }
 
-       * {
+      * {
           box-sizing: border-box;
       }
       
@@ -113,9 +113,7 @@
       .appLink {
         align-self: center;
       }
- 
-
-        .nameBtnHolder, .footerBtn {
+      .nameBtnHolder, .footerBtn {
         float: left;
         background-color: white;
         font-size: 16px;
@@ -155,7 +153,11 @@
         background-color:lightgrey;
       }
 
-       .footerBtn {
+      .active {
+        background-color:lightgrey;
+      }
+
+      .footerBtn {
        border: none;
       }
 
@@ -189,7 +191,7 @@
       <div id='buttonDiv'>
               <div class='nameBtnHolder'>
                 <button class='nameBtn' name='welcome'>Welcome</button>
-                <div class='highlight'/>
+                <div class='highlight active'/>
             </div>
 
             <div class='nameBtnHolder'>
@@ -341,8 +343,18 @@
 
       buttonCollection.forEach((item) =&gt; {
         item.onclick = function (e) {
-        selectedBox = e.target.name;
-        showChosen();
+
+          selectedBox = e.target.name;
+
+          item.nextElementSibling.classList.add("active");
+
+          buttonCollection.forEach((item) =&gt; {
+          if(item.getAttribute(&quot;name&quot;) !== selectedBox){
+            item.nextElementSibling.classList.remove("active");
+            }
+          });
+
+       showChosen();
         };
       });
 
@@ -357,6 +369,7 @@
                       item.style.display = &quot;block&quot;;
                       setTimeout(() =&gt; {
                         item.classList.add(&quot;infocus&quot;);
+                   
                       }, 100);
                     }
                   });
